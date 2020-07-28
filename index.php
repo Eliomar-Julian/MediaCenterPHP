@@ -31,7 +31,7 @@
         height: 250px;
     }
     body{
-        background-image: linear-gradient(to right, black 80%, red);
+        background-image: linear-gradient(to left, #363E4D 20%, #0D0F12);
     }
     h5{
         font-family: Arial, Helvetica, sans-serif;

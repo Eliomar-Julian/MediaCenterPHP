@@ -12,16 +12,16 @@
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/">Filmes <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/series_select.php">Series <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/series_select.php">Series</a>
+        <a class="nav-link" href="/media/">Downloads</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://github.com/Eliomar-Julian/Django_Easy_Media_Center" target="_blank">GitHub</a>
+        <a class="nav-link" href="https://github.com/Eliomar-Julian/" target="_blank">GitHub</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Admin</a>
+        <a class="nav-link" href="#"></a>
       </li>
     </ul>
     <form class="form-inline">

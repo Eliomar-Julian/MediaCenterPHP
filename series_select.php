@@ -2,7 +2,7 @@
 # -------verificando metodo de GET -----------------------------------------------------------
 require_once('menu.php');
 isset($_GET['valor']) ? $complemento = $_GET['valor'] : $complemento = "";
-echo '<h1 style="color: blue; text-align: center; padding-top: 150px;">'.$complemento.'</h1>';
+echo '<h1 style="color: blue; text-align: center; padding-top: 150px; padding-bottom: 50px; text-shadow: 1px 0px 40px white;">'.$complemento.'</h1>';
 
 # ---- definindo função de leitura e manipulação de arquivos -------------------------------------
 function leitura(){
@@ -53,15 +53,27 @@ function leitura(){
                     }
                 }
                 # ---------- montando seletor de series ---------
-                echo '
-                <div>
-                    <form method="GET">
-                        <button type="submit" name="valor" class="btn btn-secondary" value="'.$pastas.'">
-                        <h3>'.$pastas.'</h3>
-                        <img src="./media/poster/'.$poster.'.jpg" >
-                        </button>
-                    </form>
-                </div>';
+                if (strlen($pastas) < 12){
+                    echo '
+                        <div>
+                            <form method="GET">
+                                <button type="submit" name="valor" class="btn btn-secondary" value="'.$pastas.'">
+                                <h3 style="font-size: 25pt;">'.$pastas.'</h3><br/>
+                                <img src="./media/poster/'.$poster.'.jpg" >
+                                </button>
+                            </form>
+                        </div>';
+                }else {
+                    echo '
+                        <div>
+                            <form method="GET">
+                                <button type="submit" name="valor" class="btn btn-secondary" value="'.$pastas.'">
+                                <h3>'.$pastas.'</h3>
+                                <img src="./media/poster/'.$poster.'.jpg" >
+                                </button>
+                            </form>
+                        </div>';
+                    }
                 }
             }
         }
@@ -72,19 +84,21 @@ leitura()
 # ----------------- ESTILOS ----------------------------------
 ?>
 <style>
+    body{
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+    }
     .series{
         float: left;
-        width: 300px;
-        margin-left: 20pt;
+        width: 200px;
+        margin-left: 25pt;
         background-color: rgba(255, 255, 255, 0.1);
     }
     video{
-        width: 300px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         padding: 20pt;
-    }
-    body{
-        background-image: linear-gradient(to right, black 80%, red);
     }
     .titulo-series{
         color: white;
@@ -100,7 +114,7 @@ leitura()
         font-size: 14pt;
         color: red;
         float: left;
-        width: 200pt;
+        width: 150pt;
         margin: 10px;
         transition: 1s;
     }
@@ -109,17 +123,17 @@ leitura()
         transition: 0.5s;
     }
     body{
-        background-image: linear-gradient(to right, black 80%, red);
+        background-image: linear-gradient(to right, #363E4D 50%, #0D0F12);
         margin: 0px;
         padding: 0x;
     }
     h3{
-        color: ;
+        color: white;
         text-align: center;
     }
     img{
-        width: 180pt;
-        height: 220pt;
+        width: 100pt;
+        height: 150pt;
         box-shadow: 2pt 2pt 5pt black;
         border-radius: 10px;
     }
