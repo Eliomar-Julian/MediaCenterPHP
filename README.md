@@ -1,3 +1,17 @@
 # MediaCenterPHP
-a media center written in PHP to gather your favorite movies and series and share
-on your local network using your personal desktop to stream. Use with the Xampp kit in Widows
+
+um media center PHP simples para compartilhar suas serie e filmes na sua
+rede local atraves de seu computador pessoal, uso simples basta rodar o server.php
+e desfrutar da comodidade.
+
+### __requerimentos:__
+- php no path do sistema
+
+### __rode:__
+~~~~
+server.bat
+~~~~
+## ou
+~~~~
+php -S localhost:80
+~~~~
